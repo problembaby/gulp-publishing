@@ -1,14 +1,12 @@
-$primary-color: #3498db;
+// 변수 및 기본 스타일
+@use "./base/reset";
+@use "./base/variables";
+@use "./base/font";
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: $primary-color;
-  color: white;
-}
+// 믹스인 및 헬퍼
+@use "./mixins/responsive";
+@use "./mixins/helpers";
 
 
-div{
-    display: flex;
-    transition: all 0.3s ease;
-    user-select: none;
-}
+//레이아웃
+@use "../layout/_header.scss"

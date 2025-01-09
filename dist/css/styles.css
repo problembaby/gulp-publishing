@@ -1,14 +1,2 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #3498db;
-  color: white;
-}
 
-div {
-  display: flex;
-  transition: all 0.3s ease;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
 /*# sourceMappingURL=styles.css.map */
