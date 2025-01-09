@@ -1,0 +1,14 @@
+$primary-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: white;
+}
+
+
+div{
+    display: flex;
+    transition: all 0.3s ease;
+    user-select: none;
+}
