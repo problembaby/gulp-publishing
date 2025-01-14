@@ -20,7 +20,7 @@ export const html = () => {
     .pipe(gulp.dest('./dist'));
 };
 
-// SCSS to CSS, Autoprefix, and Concatenate
+// SCSS to CSS, Autoprefix, without Concatenate
 export const scss = () => {
   return gulp.src('./src/scss/**/*.scss')
     .pipe(sourcemaps.init())
@@ -28,16 +28,15 @@ export const scss = () => {
     .pipe(autoprefixer({
       cascade: false // CSS 스타일 유지
     }))
-    .pipe(concat('styles.css')) // SCSS 파일 병합
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./dist/css'));
+    .pipe(gulp.dest('./dist/resources/css')); // 원본 디렉토리 구조 유지
 };
 
 // JavaScript Concatenate
 export const js = () => {
   return gulp.src('./src/js/**/*.js')
     .pipe(concat('scripts.js')) // JS 파일 병합
-    .pipe(gulp.dest('./dist/js'));
+    .pipe(gulp.dest('./dist/resources/js'));
 };
 
 // Serve with Live Reload
