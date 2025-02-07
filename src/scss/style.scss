@@ -1,12 +1,18 @@
-// 변수 및 기본 스타일
-@use "base/reset";
-@use "base/variables";
-@use "base/font";
-
-// 믹스인 및 헬퍼
-@use "mixins/responsive";
-@use "mixins/helpers";
 
 
-//레이아웃
-@use "layout/_header.scss"
+// // 기본
+// @use "base/variables";
+// @use "base/root";
+// @use "base/font";
+// @use "base/colors";
+// @use "base/reset";
+
+
+// // 믹스인 및 헬퍼
+// @use "mixins/responsive";
+// @use "mixins/helpers";
+
+
+// //레이아웃
+// @use "layout/_header.scss"
+
