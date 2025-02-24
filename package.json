@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "퍼블리싱 걸프 초기세팅",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "gulp"
   },
@@ -15,13 +16,14 @@
     "gulp-autoprefixer": "^9.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-file-include": "^2.3.0",
-    "gulp-imagemin": "^9.1.0",
     "gulp-sass": "^6.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "install": "^0.13.0",
-    "sass": "^1.83.1"
-  },
-  "dependencies": {
-    "imagemin": "^9.0.0"
+    "sass": "^1.83.1",
+    "imagemin": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-gifsicle": "^9.0.0",
+    "imagemin-svgo": "^10.0.0"
   }
 }
